@@ -2020,6 +2020,8 @@ MonoBehaviour:
     type: 3}
   Tile: {fileID: 2777623552320607437, guid: 9d641acb211abcb4db620ef8bfb599d8, type: 3}
   content: {fileID: 1966208154}
+  colorLit: {r: 1, g: 1, b: 1, a: 1}
+  colorDark: {r: 0.509434, g: 0.509434, b: 0.509434, a: 1}
 --- !u!114 &1691675417
 MonoBehaviour:
   m_ObjectHideFlags: 0

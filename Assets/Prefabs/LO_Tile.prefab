@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2720074761587572627}
   - component: {fileID: 2168153196025923653}
   - component: {fileID: 8289811509403084912}
+  - component: {fileID: -6744800991270171660}
   m_Layer: 5
   m_Name: LO_Tile
   m_TagString: Untagged
@@ -117,4 +118,30 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2168153196025923653}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -6744800991270171660}
+        m_MethodName: FlipColor
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2777623552320607437}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &-6744800991270171660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2777623552320607437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175384a1d029d604cbeb0ee0316638ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLit: 0
+  colPos: 0
+  rowPos: 0

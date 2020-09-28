@@ -1,0 +1,52 @@
+Edit the dialogue on the go.
+You can edit and add comments, edit the tags, and set node type.
+Do not attempt to add more nodes: the number of nodes must match when importing the text file.
+Do not modify the IDs.
+Do not add or remove empty lines.
+Do not restructure the data.
+
+Dialogue name: Act1Scene1
+---------------------------------
+#NODEID#
+0
+#TAG#
+Narrator
+#ISPLAYER#
+False
+---
+#COMMENT#
+Act one, a place of new beginnings and possibility! Oh how excited you must feel, Director! Your first production opening in just a few days, I’m sure you have everything ready. 
+#COMMENT#
+Your actors know all their lines, right?
+#COMMENT#
+The lights are timed properly?
+#COMMENT#
+The props accounted for?
+#COMMENT#
+Now that I’m thinking about it why don’t we just go check on how things are going…
+---------------------------------
+#NODEID#
+1
+#TAG#
+Narrator
+#ISPLAYER#
+False
+---
+#COMMENT#
+There they are! Your two leading men.
+#COMMENT#
+Thomas, the wise, experienced thespian. He owns Avalon Community Theatre, does he not?
+#COMMENT#
+And Daniel! The wayward youth in desperate need of guidance. You may want to keep an eye on him, Director.
+#COMMENT#
+I imagine your two leading ladies are backstage.
+#COMMENT#
+McKenzie, the aspiring actress pursuing her dreams - and a degree - in the theatre.
+#COMMENT#
+Along with Samantha, coincidentally Thomas’ niece, believe it or not..
+#COMMENT#
+And… Oh. Oh my listen to me prattle whilst we’ve got quite the argument brewing… Director look. Thomas and Daniel look positively furious with one another, and not in a method acting sort of way.
+#COMMENT#
+I would get involved if I were you, it is your job, after all. Go on, get in there! So much to do, so little time… Good luck!
+---------------------------------
+#END#

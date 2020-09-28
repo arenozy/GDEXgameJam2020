@@ -1,0 +1,106 @@
+Edit the dialogue on the go.
+You can edit and add comments, edit the tags, and set node type.
+Do not attempt to add more nodes: the number of nodes must match when importing the text file.
+Do not modify the IDs.
+Do not add or remove empty lines.
+Do not restructure the data.
+
+Dialogue name: Act1Scene2
+---------------------------------
+#NODEID#
+0
+#TAG#
+Thomas
+#ISPLAYER#
+False
+---
+#COMMENT#
+Now Daniel you must speak from your diaphragm! 
+#COMMENT#
+How will the audience in the back rows know the pain and suffering of the Cratchits if they cannot hear the pain and suffering in your lines?
+---------------------------------
+#NODEID#
+1
+#TAG#
+Daniel
+#ISPLAYER#
+False
+---
+#COMMENT#
+Well if you keep stopping us every five seconds I’m not even gonna know my lines!
+#COMMENT#
+Just let me get through them a few times before you keep telling me what I’m doing wrong.
+---------------------------------
+#NODEID#
+2
+#TAG#
+Thomas
+#ISPLAYER#
+False
+---
+#COMMENT#
+*I* am simply trying to encourage you to develop good habits! 
+#COMMENT#
+Why, with just a touch more focus and dedication, you could go on to do fantastic things in the theatre!
+---------------------------------
+#NODEID#
+3
+#TAG#
+Daniel
+#ISPLAYER#
+False
+---
+#COMMENT#
+Well maybe that’s not what I want. Not all of us wanna waste our lives away in some dusty old theatre.
+#COMMENT#
+Hey Director, can we just get back to work here?
+---------------------------------
+#NODEID#
+4
+#TAG#
+Player
+#ISPLAYER#
+True
+---
+#COMMENT#
+Thomas, Dan’s right. You can’t keep stopping rehearsal whenever you want to. I’m the director. It’s my job to stop either of you when something needs changing.
+#COMMENT#
+Daniel, Thomas is only trying to help. A few quick tips never hurt anyone. Try to be more open to his experience and knowledge.
+---------------------------------
+#NODEID#
+5
+#TAG#
+Thomas
+#ISPLAYER#
+False
+---
+#COMMENT#
+I see neither of you are willing to listen to my expertise. 
+#COMMENT#
+When the play fails, I won’t be the one to blame! I will return tomorrow hopeful you’ve learnt some respect!
+---------------------------------
+#NODEID#
+6
+#TAG#
+Daniel
+#ISPLAYER#
+False
+---
+#COMMENT#
+Whatever. If I wanted to sit around and listen to how much of a screw up I am, I could’ve stayed home! 
+#COMMENT#
+I’m done for the night, man. I’ll see you losers tomorrow.
+---------------------------------
+#NODEID#
+7
+#TAG#
+McKenzie
+#ISPLAYER#
+False
+---
+#COMMENT#
+So… I guess we’re done for the night.	
+#COMMENT#
+Uh, Director? Before you go can you check the storage room? Samantha said she heard things moving around in there.
+---------------------------------
+#END#

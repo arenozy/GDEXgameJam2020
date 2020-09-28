@@ -1,0 +1,146 @@
+Edit the dialogue on the go.
+You can edit and add comments, edit the tags, and set node type.
+Do not attempt to add more nodes: the number of nodes must match when importing the text file.
+Do not modify the IDs.
+Do not add or remove empty lines.
+Do not restructure the data.
+
+Dialogue name: Act1Scene3
+---------------------------------
+#NODEID#
+0
+#TAG#
+Ghost
+#ISPLAYER#
+False
+---
+#COMMENT#
+Oh… Hello there. I don’t believe I’ve tried to introduce myself to you. Not that I suppose you can even see me… No one can, you know.
+#COMMENT#
+Quite inconvenient when you’re trying to get someone’s attention.
+---------------------------------
+#NODEID#
+1
+#TAG#
+Player
+#ISPLAYER#
+True
+---
+#COMMENT#
+I can see you.
+#COMMENT#
+Why can’t people see you?
+#COMMENT#
+A GGG... GHOST!
+---------------------------------
+#NODEID#
+2
+#TAG#
+Ghost
+#ISPLAYER#
+False
+---
+#COMMENT#
+You can?! Well that’s certainly a pleasant surprise! I’ve been here for decades now and it seems not enough people believe in ghosts anymore.
+---------------------------------
+#NODEID#
+3
+#TAG#
+Ghost
+#ISPLAYER#
+False
+---
+#COMMENT#
+Hm? Oh you cannot see a ghost unless you believe in ghosts. Which… I suppose must mean you believe in ghosts!
+#COMMENT#
+Oh this is wonderful, it’s been decades since I spoke with anyone.
+---------------------------------
+#NODEID#
+4
+#TAG#
+Ghost
+#ISPLAYER#
+False
+---
+#COMMENT#
+Please don’t be frightened! You’re the first person who’s been able to see me in some time.
+#COMMENT#
+I really didn’t mean to startle you. I’ve just gotten used to being unseen and unheard. Only those who believe in ghosts can see them, you know.
+---------------------------------
+#NODEID#
+5
+#TAG#
+Ghost
+#ISPLAYER#
+False
+---
+#COMMENT#
+You could help me! 
+#COMMENT#
+If your play’s a success, perhaps I can finally move on!
+---------------------------------
+#NODEID#
+6
+#TAG#
+Player
+#ISPLAYER#
+True
+---
+#COMMENT#
+The play’s going to fail. No one can get along.
+#COMMENT#
+How can I make sure the play succeeds?
+#COMMENT#
+Why should I help you?
+---------------------------------
+#NODEID#
+7
+#TAG#
+Ghost
+#ISPLAYER#
+False
+---
+#COMMENT#
+If you truly believed that, why are you still here? 
+#COMMENT#
+Please, there must be some way you can encourage your actors to cooperate together.
+---------------------------------
+#NODEID#
+8
+#TAG#
+Ghost
+#ISPLAYER#
+False
+---
+#COMMENT#
+Well, I imagine you’ll need to speak with your cast, find any misplaced props, and ensure the stage is in good working order. 
+---------------------------------
+#NODEID#
+9
+#TAG#
+Ghost
+#ISPLAYER#
+False
+---
+#COMMENT#
+You don’t have to, I suppose, but if you don’t my being here will continue to cause issues for your play.
+#COMMENT#
+If you want a successful performance, you’ll be helping me regardless.
+---------------------------------
+#NODEID#
+10
+#TAG#
+Ghost
+#ISPLAYER#
+False
+---
+#COMMENT#
+It’s settled then! Oh thank you!
+#COMMENT#
+And I’ll be here, of course. I don’t suppose there would be anywhere else I would be.
+#COMMENT#
+Remember, speak to your cast. They’ll tell you if anything needs to be found or repaired, and you’ll likely improve their moods by listening to them.
+#COMMENT#
+I certainly have the utmost faith in you. Of course, you are also my only option, so it isn’t as if I have much choice… But I’m certain you’ll do just a grand job!
+---------------------------------
+#END#

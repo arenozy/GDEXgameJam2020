@@ -45,6 +45,7 @@ public class LightsOut : MonoBehaviour
             for (int j = 0; j < GridSize; j++)
             {
                 GameObject tile = Instantiate(Tile, newRowContent);
+                tile.GetComponent<Image>().color = colorDark;
                 tile.GetComponent<LOtile>().SetPos(i, j);
                 gridRow.Add(tile);
             }

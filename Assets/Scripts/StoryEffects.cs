@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,6 +9,15 @@ public class StoryEffects : MonoBehaviour
 
     [SerializeField] GameObject TransitionBox;
     public float time = 0.001f;
+    [SerializeField] TextMeshProUGUI actText;
+
+    private void Start()
+    {
+        ShowText("Act I");
+        //StartNarration();
+        FadeIn();
+    }
+
 
     private void Update()
     {
@@ -60,5 +70,16 @@ public class StoryEffects : MonoBehaviour
             yield return new WaitForSeconds(time);
         }
         Debug.Log("Stopped");
+    }
+
+    public void ShowText(string text)
+    {
+        actText.gameObject.SetActive(true);
+        actText.SetText(text);
+    }
+
+    public void HideText()
+    {
+        actText.gameObject.SetActive(false);
     }
 }

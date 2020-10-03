@@ -1,13 +1,17 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-
+using VIDE_Data;
 public class StoryEffects : MonoBehaviour
 {
 
     [SerializeField] GameObject TransitionBox;
+    [SerializeField] GameObject buttonNext;
+    [SerializeField] GameObject miniLO;
+    [SerializeField] GameObject miniSP;
     public float time = 0.001f;
     [Space]
 
@@ -23,8 +27,18 @@ public class StoryEffects : MonoBehaviour
     [SerializeField] List<AudioClip> SFX_list = new List<AudioClip>();
     [SerializeField] List<AudioClip> narration_list = new List<AudioClip>();
 
+    [Space]
+    [SerializeField] VIDE_Assign dialogManager;
+
+    [Space]
+    [SerializeField] bool isLightsOutDone;
+    [SerializeField] bool isSlidingPuzzleDone;
+
     private void Start()
     {
+        isLightsOutDone = false;
+        isSlidingPuzzleDone = false;
+
         ShowText("Act I");
         StartNarration(narration_list[0]);
         FadeIn();
@@ -97,5 +111,24 @@ public class StoryEffects : MonoBehaviour
         PlayerSoundEffect.Stop();
         PlayerSoundEffect.clip = sound;
         PlayerSoundEffect.Play();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            LoadDialogue("Act1Scene1");
+        }
+    }
+
+    public void LoadDialogue(string dialogueName)
+    {
+        dialogManager.AssignNew(dialogueName);
+    }
+
+    public void StartLightsOut()
+    {
+        buttonNext.SetActive(false);
+        miniLO.SetActive(true);
     }
 }

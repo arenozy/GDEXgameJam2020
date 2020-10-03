@@ -19,7 +19,14 @@ public class SlidePuzzle : MonoBehaviour
     {
         Vector3 placeholder = self.transform.position;
         Debug.Log(Vector3.Distance(placeholder, slot.transform.position));
-        if (Vector3.Distance(placeholder, slot.transform.position) < 55)
+        RectTransform rect = self.GetComponent<RectTransform>();
+
+        Vector3[] v = new Vector3[4];
+        rect.GetWorldCorners(v);
+        float size = v[0].y - v[1].y;
+        size = Mathf.Abs(size);
+
+        if (Vector3.Distance(placeholder, slot.transform.position) <= size)
         {
             self.transform.position = slot.transform.position;
             slot.transform.position = placeholder;

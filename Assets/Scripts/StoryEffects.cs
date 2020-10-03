@@ -9,27 +9,25 @@ public class StoryEffects : MonoBehaviour
 
     [SerializeField] GameObject TransitionBox;
     public float time = 0.001f;
+    [Space]
+
     [SerializeField] TextMeshProUGUI actText;
+
+    [Space]
+    [SerializeField] AudioSource PlayerBGM;
+    [SerializeField] AudioSource PlayerSoundEffect;
+    [SerializeField] AudioSource PlayerNarration;
+
+    [Space]
+    [SerializeField] List<AudioClip> BGM_list = new List<AudioClip>();
+    [SerializeField] List<AudioClip> SFX_list = new List<AudioClip>();
+    [SerializeField] List<AudioClip> narration_list = new List<AudioClip>();
 
     private void Start()
     {
         ShowText("Act I");
-        //StartNarration();
+        StartNarration(narration_list[0]);
         FadeIn();
-    }
-
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            StartCoroutine(IFadeIn());
-        }
-
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            StartCoroutine(IFadeOut());
-        }
     }
 
     public void FadeIn()
@@ -46,21 +44,19 @@ public class StoryEffects : MonoBehaviour
 
     IEnumerator IFadeIn()
     {
-        Debug.Log("Started");
         Color color = TransitionBox.GetComponent<Image>().color;
 
-        while(color.a > 0)
+        while (color.a > 0)
         {
             color.a -= 0.02f;
             TransitionBox.GetComponent<Image>().color = color;
             yield return new WaitForSeconds(time);
         }
-        Debug.Log("Stopped");
+        HideText();
     }
 
     IEnumerator IFadeOut()
     {
-        Debug.Log("Started");
         Color color = TransitionBox.GetComponent<Image>().color;
 
         while (color.a < 1)
@@ -69,7 +65,6 @@ public class StoryEffects : MonoBehaviour
             TransitionBox.GetComponent<Image>().color = color;
             yield return new WaitForSeconds(time);
         }
-        Debug.Log("Stopped");
     }
 
     public void ShowText(string text)
@@ -81,5 +76,26 @@ public class StoryEffects : MonoBehaviour
     public void HideText()
     {
         actText.gameObject.SetActive(false);
+    }
+
+    public void StartNarration(AudioClip narration)
+    {
+        PlayerNarration.Stop();
+        PlayerNarration.clip = narration;
+        PlayerNarration.Play();
+    }
+
+    public void StartBGM(AudioClip music)
+    {
+        PlayerBGM.Stop();
+        PlayerBGM.clip = music;
+        PlayerBGM.Play();
+    }
+
+    public void StartSound(AudioClip sound)
+    {
+        PlayerSoundEffect.Stop();
+        PlayerSoundEffect.clip = sound;
+        PlayerSoundEffect.Play();
     }
 }

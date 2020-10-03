@@ -40,7 +40,7 @@ public class StoryEffects : MonoBehaviour
         isSlidingPuzzleDone = false;
 
         ShowText("Act I");
-        StartNarration(0);
+        //StartNarration(0);
         FadeIn();
     }
 
@@ -101,6 +101,7 @@ public class StoryEffects : MonoBehaviour
 
     public void StartBGM(int pos)
     {
+        Debug.Log("Starting BGM");
         PlayerBGM.Stop();
         PlayerBGM.clip = BGM_list[pos];
         PlayerBGM.Play();

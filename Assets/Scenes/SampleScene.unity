@@ -3022,10 +3022,10 @@ MonoBehaviour:
   PlayerSoundEffect: {fileID: 1866052903}
   PlayerNarration: {fileID: 2084318510}
   BGM_list:
+  - {fileID: 8300000, guid: b18959daf6e608a4091a70b950ddf780, type: 3}
   - {fileID: 8300000, guid: dcf04ed63e151d24a83bb9beab3c18e7, type: 3}
   - {fileID: 8300000, guid: 211b91aac7dcdf44c8f6cad5082b7ad7, type: 3}
   - {fileID: 8300000, guid: f38b894ac040fb7498ee3ddf50e6babb, type: 3}
-  - {fileID: 8300000, guid: b18959daf6e608a4091a70b950ddf780, type: 3}
   SFX_list:
   - {fileID: 8300000, guid: f9eb125d520212148b9e89dc6a391272, type: 3}
   - {fileID: 8300000, guid: 03c9aaf5b4fe04b439d42f32feefd5e1, type: 3}

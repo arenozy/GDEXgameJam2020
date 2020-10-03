@@ -40,7 +40,7 @@ public class StoryEffects : MonoBehaviour
         isSlidingPuzzleDone = false;
 
         ShowText("Act I");
-        StartNarration(narration_list[0]);
+        StartNarration(0);
         FadeIn();
     }
 
@@ -92,24 +92,25 @@ public class StoryEffects : MonoBehaviour
         actText.gameObject.SetActive(false);
     }
 
-    public void StartNarration(AudioClip narration)
+    public void StartNarration(int pos)
     {
         PlayerNarration.Stop();
-        PlayerNarration.clip = narration;
+        PlayerNarration.clip = narration_list[pos];
         PlayerNarration.Play();
     }
 
-    public void StartBGM(AudioClip music)
+    public void StartBGM(int pos)
     {
         PlayerBGM.Stop();
-        PlayerBGM.clip = music;
+        PlayerBGM.clip = BGM_list[pos];
         PlayerBGM.Play();
     }
 
-    public void StartSound(AudioClip sound)
+    public void StartSound(int pos)
     {
+        Debug.Log("testytest");
         PlayerSoundEffect.Stop();
-        PlayerSoundEffect.clip = sound;
+        PlayerSoundEffect.clip = SFX_list[pos];
         PlayerSoundEffect.Play();
     }
 

@@ -11,6 +11,10 @@ public class CameraMove : MonoBehaviour
 
     [SerializeField] GameObject mouseBlocker;
 
+    [SerializeField] GameObject backstage;
+    [SerializeField] GameObject theatre;
+    [SerializeField] GameObject lobby;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -58,5 +62,20 @@ public class CameraMove : MonoBehaviour
         main.transform.rotation = newNode.transform.rotation;
 
         mouseBlocker.SetActive(false);
+    }
+
+    public void moveToLobby()
+    {
+        LerpToNewNode(lobby);
+    }
+
+    public void moveToTheatre()
+    {
+        LerpToNewNode(theatre);
+    }
+
+    public void moveToBackstage()
+    {
+        LerpToNewNode(backstage);
     }
 }

@@ -1150,7 +1150,7 @@ PrefabInstance:
     - target: {fileID: 4853150824017669345, guid: 578537e675a36c249ae7769f8fe9be6b,
         type: 3}
       propertyPath: m_fontSize
-      value: 19.7
+      value: 10.45
       objectReference: {fileID: 0}
     - target: {fileID: 5072421551739543181, guid: 578537e675a36c249ae7769f8fe9be6b,
         type: 3}
@@ -1663,11 +1663,6 @@ PrefabInstance:
       propertyPath: m_text
       value: To Theatre
       objectReference: {fileID: 0}
-    - target: {fileID: 4285751647440138576, guid: 578537e675a36c249ae7769f8fe9be6b,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 312.07
-      objectReference: {fileID: 0}
     - target: {fileID: 4853150824017669345, guid: 578537e675a36c249ae7769f8fe9be6b,
         type: 3}
       propertyPath: m_text
@@ -1745,11 +1740,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 376116265}
-    - target: {fileID: 5267165413387507311, guid: 578537e675a36c249ae7769f8fe9be6b,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 286.91
-      objectReference: {fileID: 0}
     - target: {fileID: 6505719811125939887, guid: 578537e675a36c249ae7769f8fe9be6b,
         type: 3}
       propertyPath: m_Name
@@ -1775,7 +1765,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1082385618
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2099,11 +2089,6 @@ PrefabInstance:
       propertyPath: m_text
       value: To Theatre
       objectReference: {fileID: 0}
-    - target: {fileID: 4285751647440138576, guid: 578537e675a36c249ae7769f8fe9be6b,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 312.07
-      objectReference: {fileID: 0}
     - target: {fileID: 4853150824017669345, guid: 578537e675a36c249ae7769f8fe9be6b,
         type: 3}
       propertyPath: m_text
@@ -2112,7 +2097,7 @@ PrefabInstance:
     - target: {fileID: 4853150824017669345, guid: 578537e675a36c249ae7769f8fe9be6b,
         type: 3}
       propertyPath: m_fontSize
-      value: 11.9
+      value: 10.45
       objectReference: {fileID: 0}
     - target: {fileID: 5072421551739543181, guid: 578537e675a36c249ae7769f8fe9be6b,
         type: 3}
@@ -2184,11 +2169,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 376116265}
-    - target: {fileID: 5267165413387507311, guid: 578537e675a36c249ae7769f8fe9be6b,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 286.91
-      objectReference: {fileID: 0}
     - target: {fileID: 6505719811125939887, guid: 578537e675a36c249ae7769f8fe9be6b,
         type: 3}
       propertyPath: m_Name

@@ -9,8 +9,12 @@ public class SlideMaster : MonoBehaviour
 
     public bool[] isWin = new bool[16];
     // Start is called before the first frame update
-    void Start()
+    public void ResetGame()
     {
+        foreach(Transform tile in tileContainer.transform)
+        {
+            tile.position = tile.gameObject.GetComponent<SlidePuzzle>().origPos;
+        }
     }
 
     // Update is called once per frame
@@ -45,7 +49,7 @@ public class SlideMaster : MonoBehaviour
         }
         if (weWon)
         {
-            Debug.Log("yay " + isWin.Length);
+            gameObject.transform.parent.gameObject.SetActive(false);
         }
     }
 }

@@ -113,6 +113,21 @@ public class StoryEffects : MonoBehaviour
         PlayerSoundEffect.Play();
     }
 
+    public void ChangeVolumeNarration(float vol)
+    {
+        PlayerNarration.volume = vol;
+    }
+
+    public void ChangeVolumeBGM(float vol)
+    {
+        PlayerBGM.volume = vol;
+    }
+
+    public void ChangeVolumeSound(float vol)
+    {
+        PlayerSoundEffect.volume = vol;
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))

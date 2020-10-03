@@ -1842,7 +1842,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1082385618
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4659,13 +4659,13 @@ MonoBehaviour:
   - TriggeredDude
   - TriggeredDude
   - Witch
-  assignedIndex: 1
-  assignedID: 10086
-  assignedDialogue: Act1Scene2
+  assignedIndex: 0
+  assignedID: 25116
+  assignedDialogue: Act1Scene1
   interactionCount: 0
   alias: Dude
   overrideStartNode: -1
-  defaultNPCSprite: {fileID: 21300000, guid: c438947a01291e34db8ab2df540dc13a, type: 3}
+  defaultNPCSprite: {fileID: 0}
   defaultPlayerSprite: {fileID: 0}
   targetManager: {fileID: 2060932886}
   preload: 0

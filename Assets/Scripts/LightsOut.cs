@@ -14,8 +14,8 @@ public class LightsOut : MonoBehaviour
     public GameObject Tile;
     public GameObject content;
 
-    [SerializeField] Color colorLit;
-    [SerializeField] Color colorDark;
+    [SerializeField] Sprite switchUp;
+    [SerializeField] Sprite switchDown;
 
 
     void Start()
@@ -45,7 +45,7 @@ public class LightsOut : MonoBehaviour
             for (int j = 0; j < GridSize; j++)
             {
                 GameObject tile = Instantiate(Tile, newRowContent);
-                tile.GetComponent<Image>().color = colorDark;
+                tile.GetComponent<Image>().sprite = switchDown;
                 tile.GetComponent<LOtile>().SetPos(i, j);
                 gridRow.Add(tile);
             }
@@ -94,7 +94,7 @@ public class LightsOut : MonoBehaviour
         {
             foreach(GameObject tile in row)
             {
-                if (tile.GetComponent<Image>().color == colorDark)
+                if (tile.GetComponent<Image>().sprite == switchDown)
                 {
                     win = false;
                 }
@@ -102,7 +102,7 @@ public class LightsOut : MonoBehaviour
         }
         if(win)
         {
-            Debug.Log("Yay");
+            gameObject.SetActive(false);
         }
     }
 
@@ -110,13 +110,13 @@ public class LightsOut : MonoBehaviour
     {
         Image tileImage = tile.GetComponent<Image>();
 
-        if(tileImage.color == colorLit)
+        if(tileImage.sprite == switchUp)
         {
-            tileImage.color = colorDark;
+            tileImage.sprite = switchDown;
         }
         else
         {
-            tileImage.color = colorLit;
+            tileImage.sprite = switchUp;
         }
     }
 }

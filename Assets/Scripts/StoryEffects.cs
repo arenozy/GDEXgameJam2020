@@ -9,6 +9,9 @@ public class StoryEffects : MonoBehaviour
 {
 
     [SerializeField] GameObject TransitionBox;
+    [SerializeField] GameObject buttonNext;
+    [SerializeField] GameObject miniLO;
+    [SerializeField] GameObject miniSP;
     public float time = 0.001f;
     [Space]
 
@@ -27,8 +30,15 @@ public class StoryEffects : MonoBehaviour
     [Space]
     [SerializeField] VIDE_Assign dialogManager;
 
+    [Space]
+    [SerializeField] bool isLightsOutDone;
+    [SerializeField] bool isSlidingPuzzleDone;
+
     private void Start()
     {
+        isLightsOutDone = false;
+        isSlidingPuzzleDone = false;
+
         ShowText("Act I");
         StartNarration(narration_list[0]);
         FadeIn();
@@ -114,5 +124,11 @@ public class StoryEffects : MonoBehaviour
     public void LoadDialogue(string dialogueName)
     {
         dialogManager.AssignNew(dialogueName);
+    }
+
+    public void StartLightsOut()
+    {
+        buttonNext.SetActive(false);
+        miniLO.SetActive(true);
     }
 }

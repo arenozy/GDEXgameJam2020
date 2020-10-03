@@ -1170,6 +1170,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1185448249573813427, guid: 578537e675a36c249ae7769f8fe9be6b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1784173005597090789, guid: 578537e675a36c249ae7769f8fe9be6b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1229,11 +1234,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: To Lobby
-      objectReference: {fileID: 0}
-    - target: {fileID: 4285751647440138576, guid: 578537e675a36c249ae7769f8fe9be6b,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 312.07
       objectReference: {fileID: 0}
     - target: {fileID: 4853150824017669345, guid: 578537e675a36c249ae7769f8fe9be6b,
         type: 3}
@@ -1315,11 +1315,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 1540634195}
-    - target: {fileID: 5267165413387507311, guid: 578537e675a36c249ae7769f8fe9be6b,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 286.91
-      objectReference: {fileID: 0}
     - target: {fileID: 6505719811125939887, guid: 578537e675a36c249ae7769f8fe9be6b,
         type: 3}
       propertyPath: m_Name

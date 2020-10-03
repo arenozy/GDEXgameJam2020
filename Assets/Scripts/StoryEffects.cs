@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-
+using VIDE_Data;
 public class StoryEffects : MonoBehaviour
 {
 
@@ -22,6 +22,7 @@ public class StoryEffects : MonoBehaviour
     [SerializeField] List<AudioClip> BGM_list = new List<AudioClip>();
     [SerializeField] List<AudioClip> SFX_list = new List<AudioClip>();
     [SerializeField] List<AudioClip> narration_list = new List<AudioClip>();
+    [SerializeField] List<VIDE_Assign> dialog_List = new List<VIDE_Assign>();
 
     private void Start()
     {

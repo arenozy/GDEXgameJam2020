@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -22,7 +23,9 @@ public class StoryEffects : MonoBehaviour
     [SerializeField] List<AudioClip> BGM_list = new List<AudioClip>();
     [SerializeField] List<AudioClip> SFX_list = new List<AudioClip>();
     [SerializeField] List<AudioClip> narration_list = new List<AudioClip>();
-    [SerializeField] List<VIDE_Assign> dialog_List = new List<VIDE_Assign>();
+
+    [Space]
+    [SerializeField] VIDE_Assign dialogManager;
 
     private void Start()
     {
@@ -98,5 +101,18 @@ public class StoryEffects : MonoBehaviour
         PlayerSoundEffect.Stop();
         PlayerSoundEffect.clip = sound;
         PlayerSoundEffect.Play();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            LoadDialogue("Act1Scene1");
+        }
+    }
+
+    public void LoadDialogue(string dialogueName)
+    {
+        dialogManager.AssignNew(dialogueName);
     }
 }

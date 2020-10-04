@@ -164,17 +164,17 @@ public class Template_UIManager : MonoBehaviour
             {
                 Interact(VD.assigned);
             }
-            if (Input.GetMouseButtonDown(0))
-            {
-                if (animatingText)
-                {
-                    Interact(VD.assigned);
-                }
-                else if (!data.isPlayer)
-                {
-                    Interact(VD.assigned);
-                }
-            }
+            //if (Input.GetMouseButtonDown(0))
+            //{
+            //    if (animatingText)
+            //    {
+            //        Interact(VD.assigned);
+            //    }
+            //    else if (!data.isPlayer)
+            //    {
+            //        Interact(VD.assigned);
+            //    }
+            //}
         }
         //Note you could also use Unity's Navi system, in which case you would tick the useNavigation flag.
     }

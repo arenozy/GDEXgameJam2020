@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using VIDE_Data;
 public class StoryEffects : MonoBehaviour
@@ -34,6 +35,9 @@ public class StoryEffects : MonoBehaviour
     [SerializeField] bool isLightsOutDone;
     [SerializeField] bool isSlidingPuzzleDone;
 
+    [Space]
+    [SerializeField] GameObject endGamePaper;
+
     private void Start()
     {
         isLightsOutDone = false;
@@ -42,6 +46,50 @@ public class StoryEffects : MonoBehaviour
         ShowText("Act I");
         //StartNarration(0);
         FadeIn();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            WinGame();
+        }
+    }
+
+    public void WinGame()
+    {
+        StopAllCoroutines();
+        StartCoroutine(IWinGame());
+    }
+    IEnumerator IWinGame()
+    {
+        Color colora = TransitionBox.GetComponent<Image>().color;
+
+        while (colora.a < 1)
+        {
+            colora.a += 0.02f;
+            TransitionBox.GetComponent<Image>().color = colora;
+            yield return new WaitForSeconds(time);
+        }
+
+        Color color = endGamePaper.GetComponent<Image>().color;
+
+        while (color.a < 1)
+        {
+            color.a += 0.02f;
+            endGamePaper.GetComponent<Image>().color = color;
+            yield return new WaitForSeconds(time);
+        }
+
+        yield return new WaitForSeconds(5.0f);
+
+        while (color.a > 0)
+        {
+            color.a -= 0.02f;
+            endGamePaper.GetComponent<Image>().color = color;
+            yield return new WaitForSeconds(time);
+        }
+        SceneManager.LoadScene(0);
     }
 
     public void FadeIn()

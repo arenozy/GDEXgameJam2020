@@ -79,6 +79,8 @@ public class StoryEffects : MonoBehaviour
             TransitionBox.GetComponent<Image>().color = color;
             yield return new WaitForSeconds(time);
         }
+        yield return new WaitForSeconds(0.25f);
+        FadeIn();
     }
 
     public void ShowText(string text)
@@ -130,12 +132,9 @@ public class StoryEffects : MonoBehaviour
         PlayerSoundEffect.volume = vol;
     }
 
-    private void Update()
+    public void StopNarration(int pos)
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            LoadDialogue("Act1Scene1");
-        }
+        PlayerNarration.Stop();
     }
 
     public void LoadDialogue(string dialogueName)

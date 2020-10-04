@@ -225,4 +225,27 @@ public class NPC_Manager : MonoBehaviour
             Debug.LogError("CHIP, someone didnt type a letter properly!");
         }
     }
+
+    public void AllOff()
+    {
+        EstelleB.SetActive(false);
+        EstelleL.SetActive(false);
+        EstelleT.SetActive(false);
+
+        DanielB.SetActive(false);
+        DanielL.SetActive(false);
+        DanielT.SetActive(false);
+
+        ThomasB.SetActive(false);
+        ThomasL.SetActive(false);
+        ThomasT.SetActive(false);
+
+        MckenzieB.SetActive(false);
+        MckenzieL.SetActive(false);
+        MckenzieT.SetActive(false);
+
+        SamanthaB.SetActive(false);
+        SamanthaL.SetActive(false);
+        SamanthaT.SetActive(false);
+    }
 }

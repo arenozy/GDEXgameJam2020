@@ -52,4 +52,9 @@ public class SlideMaster : MonoBehaviour
             gameObject.transform.parent.gameObject.SetActive(false);
         }
     }
+
+    public void YouWin()
+    {
+        gameObject.transform.parent.gameObject.SetActive(false);
+    }
 }

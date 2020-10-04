@@ -48,12 +48,9 @@ public class StoryEffects : MonoBehaviour
         FadeIn();
     }
 
-    private void Update()
+    public void ReturToMain()
     {
-        if (Input.GetKeyDown(KeyCode.Y))
-        {
-            WinGame();
-        }
+        SceneManager.LoadScene(0);
     }
 
     public void WinGame()

@@ -13,6 +13,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using VIDE_Data; //<--- Import to use VD class
+using TMPro;
 
 public class Template_UIManager : MonoBehaviour
 {
@@ -24,11 +25,11 @@ public class Template_UIManager : MonoBehaviour
     public GameObject NPC_Container;
     public GameObject playerContainer;
 
-    public Text NPC_Text;
-    public Text NPC_label;
+    public TextMeshProUGUI NPC_Text;
+    public TextMeshProUGUI NPC_label;
     public Image NPCSprite;
     public Image playerSprite;
-    public Text playerLabel;
+    public TextMeshProUGUI playerLabel;
 
     public List<Button> maxPlayerChoices = new List<Button>();
 
@@ -185,7 +186,7 @@ public class Template_UIManager : MonoBehaviour
     {
         //Reset some variables
         NPC_Text.text = "";
-        foreach (Button b in maxPlayerChoices) { b.transform.GetChild(0).GetComponent<Text>().text = ""; b.transform.GetChild(0).GetComponent<Text>().color = Color.white; }
+        foreach (Button b in maxPlayerChoices) { b.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = ""; b.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color = Color.white; }
         NPC_Container.SetActive(false);
         playerContainer.SetActive(false);
         playerSprite.sprite = null;
@@ -281,7 +282,7 @@ public class Template_UIManager : MonoBehaviour
         {
             for (int i = 0; i < choices.Length; i++)
             {
-                maxPlayerChoices[i].transform.GetChild(0).GetComponent<Text>().text = choices[i]; //Assumes first child of button gameobject is text gameobject
+                maxPlayerChoices[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = choices[i]; //Assumes first child of button gameobject is text gameobject
                 maxPlayerChoices[i].gameObject.SetActive(true);
                 availableChoices++;
             }

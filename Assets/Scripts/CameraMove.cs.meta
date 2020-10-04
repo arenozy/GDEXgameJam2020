@@ -3,7 +3,15 @@ guid: 5f69d823a620f554a8ac3daced34079f
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - CurrentNode: {fileID: 413366310576000228, guid: f77fb5cded5cd4df694f803277de75d3,
+      type: 3}
+  - mouseBlocker: {instanceID: 0}
+  - backstage: {fileID: 413366310576000228, guid: f77fb5cded5cd4df694f803277de75d3,
+      type: 3}
+  - theatre: {fileID: 7629972964308953147, guid: 3e4154efc59314dfc95ea166948464d0,
+      type: 3}
+  - lobby: {fileID: 4329989601160895395, guid: 8beff0e67f7c44ab29797150dedc9e7a, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

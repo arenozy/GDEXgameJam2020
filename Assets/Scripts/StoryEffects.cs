@@ -192,4 +192,15 @@ public class StoryEffects : MonoBehaviour
         buttonNext.SetActive(false);
         miniLO.SetActive(true);
     }
+
+    public void StartSlidingPuzzle()
+    {
+        buttonNext.SetActive(false);
+        miniSP.SetActive(true);
+    }
+
+    public void ShowNextButton()
+    {
+        buttonNext.SetActive(true);
+    }
 }
